@@ -13,7 +13,7 @@ public class CalculatriceTest {
     }
 
     @org.junit.Test
-    public void add() {
+    public void testAdd() {
         int a = 2;
         int b = 4;
 
@@ -24,7 +24,7 @@ public class CalculatriceTest {
     }
 
     @org.junit.Test
-    public void sub() {
+    public void testSub() {
         int a = 4;
         int b = 2;
 
@@ -34,12 +34,12 @@ public class CalculatriceTest {
         assertEquals(2, actual);
     }
     @org.junit.Test
-    public void mul() {
+    public void testMul() {
         int a = 4;
-        int b = 1;
+        int b = 2;
 
         Calculatrice calc = new Calculatrice();
-        int actual = calc.sub(a, b);
+        int actual = calc.mul(a, b);
 
         assertEquals(8, actual);
     }

@@ -61,8 +61,18 @@ public class CalculatriceTest {
         int a = 4;
 
         Calculatrice calc = new Calculatrice();
-        int actual = calc.pair(a);
+        int actual = calc.isPair(a);
 
         assertEquals(0, actual);
+    }
+
+    @org.junit.Test
+    public void testPremier() {
+        int a = 11;
+
+        Calculatrice calc = new Calculatrice();
+        boolean actual = calc.isPremier(a);
+
+        assertEquals(true, actual);
     }
 }

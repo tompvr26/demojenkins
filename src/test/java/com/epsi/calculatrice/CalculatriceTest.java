@@ -33,4 +33,14 @@ public class CalculatriceTest {
 
         assertEquals(2, actual);
     }
+    @org.junit.Test
+    public void mul() {
+        int a = 4;
+        int b = 1;
+
+        Calculatrice calc = new Calculatrice();
+        int actual = calc.sub(a, b);
+
+        assertEquals(8, actual);
+    }
 }

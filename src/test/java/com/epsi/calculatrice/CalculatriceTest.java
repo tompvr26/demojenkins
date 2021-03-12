@@ -33,6 +33,7 @@ public class CalculatriceTest {
 
         assertEquals(2, actual);
     }
+
     @org.junit.Test
     public void testMul() {
         int a = 4;
@@ -42,5 +43,26 @@ public class CalculatriceTest {
         int actual = calc.mul(a, b);
 
         assertEquals(8, actual);
+    }
+
+    @org.junit.Test
+    public void testDiv() {
+        int a = 4;
+        int b = 2;
+
+        Calculatrice calc = new Calculatrice();
+        int actual = calc.div(a, b);
+
+        assertEquals(2, actual);
+    }
+
+    @org.junit.Test
+    public void testPair() {
+        int a = 4;
+
+        Calculatrice calc = new Calculatrice();
+        int actual = calc.pair(a);
+
+        assertEquals(0, actual);
     }
 }

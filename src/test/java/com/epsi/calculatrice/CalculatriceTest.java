@@ -15,7 +15,7 @@ public class CalculatriceTest {
     @org.junit.Test
     public void add() {
         int a = 2;
-        int b = 4;
+        int b = 3;
 
         Calculatrice calc = new Calculatrice();
         int actual = calc.add(a, b);
